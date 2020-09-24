@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    此處會直接在xml中存入key value-->
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="hiring"
+        android:summaryOff="Temporary"
+        android:summaryOn="Reguar"
+        android:title="Hiring Status" />
+    <EditTextPreference
+        android:key="username"
+        android:title="UserName"
+        android:summary="Input username"
+        android:dialogTitle="Input your username"
+        android:dialogMessage="alphabetic 6-30 digits"/>
+    <ListPreference
+        android:key="location"
+        android:title="Location"
+        android:summary="preferred location"
+        android:entries="@array/locations"
+        android:entryValues="@array/location_value"/>
+</PreferenceScreen>
